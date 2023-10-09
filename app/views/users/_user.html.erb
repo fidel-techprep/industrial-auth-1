@@ -26,7 +26,7 @@
           <span class="font-weight-bold">
             <%= user.followers.size %>
           </span>
-          
+
           followers
 
         <% end %>
@@ -43,28 +43,28 @@
           <span class="font-weight-bold">
             <%= user.leaders.size %>
           </span>
-          
+
           following
 
         <% end %>
       </div>
 
       <div class="col">
-      <% if current_user == user %>
-        <%=
+        <% if current_user == user %>
+          <%=
           link_to "#",
             data: { 
               bs_toggle: "modal", 
               bs_target: "##{dom_id(user)}_pending"
             } do %>
 
-          <span class="font-weight-bold">
-            <%= user.pending.size %>
-          </span>
-          
-          pending
+            <span class="font-weight-bold">
+              <%= user.pending.size %>
+            </span>
 
-        <% end %>
+            pending
+
+          <% end %>
         <% end %>
       </div>
     </div>
