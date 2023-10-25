@@ -10,7 +10,7 @@
       <p><%= comment.body %></p>
     </div>
 
-    <% if current_user == comment.author %>
+    <% if policy(comment).edit? %>
       <div>
         <%= link_to edit_comment_path(comment), class: "btn btn-link btn-sm text-muted" do %>
           <i class="fas fa-edit fa-fw"></i>
