@@ -308,14 +308,14 @@
             <% end %>
           </div>
 
-          <%= f.submit "Update", class: "btn btn-block btn-outline-primary" %>
+          <%= f.submit "Update", class: "btn col-12 btn-outline-primary" %>
         <% end %>
 
-        <%= link_to "Back", :back, class: "btn btn-block btn-outline-secondary" %>
+        <%= link_to "Back", :back, class: "btn col-12 btn-outline-secondary" %>
       </div>
 
       <div class="card-footer">
-        <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, class: "btn btn-block btn-link", data: { turbo_method: :delete } %>
+        <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, class: "btn col-12 btn-link", data: { turbo_method: :delete } %>
       </div>
     </div>
   </div>
